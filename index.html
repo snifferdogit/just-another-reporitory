@@ -1,0 +1,123 @@
+!DOCTYPE html>
+<!-- Document created by Snifferdog It / snifferdogit.com-->
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Snifferdog IT Search Engine</title>
+    <style type="text/css">
+.button {
+    display: inline-block;
+    padding: 20px;
+    background-color: #266EB5;
+    text-decoration: none;
+    color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+  border: 2px solid grey;
+}
+.button:after {
+  background-color: blue;
+  color: black;
+}
+
+
+.button2 {
+    display: inline-block;
+    padding: 20px;
+    background-color: #266EB5;
+    text-decoration: none;
+    color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+  border: 2px solid grey;
+}
+
+.button2:hover {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+  background-color: #479B47;
+  color: black;
+}
+
+.logo {
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+  color: #A22727;
+}
+
+</style>
+    <script type="text/javascript">
+function dosearch() {
+var sf=document.searchform;
+var submitto = sf.sengines.options[sf.sengines.selectedIndex].value + escape(sf.searchterms.value);
+window.open(submitto);
+return false;
+}
+</script>
+</head>
+
+<body>
+    <div class="logo">
+        <h1>SnifferDog IT</h1>
+    </div>
+    <div style = "font-size: 20px; text-align: center">
+       <form name="searchform" onSubmit="return dosearch();">
+        Search: 
+            <select style="width: 300px; height: 70px; font-size: 20px" name="sengines"class="button">
+            <option value="https://www.google.com/search?q=" selected>Google</option>
+            <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+            <option value="http://en.wikipedia.org/wiki/">Wikipedia</option>
+            <option value="https://www.facebook.com/search/results/?q=">Facebook</option>
+            <option value="https://twitter.com/search?q=">Twitter</option>
+            <option value="https://search.yahoo.com/search;?p=">Yahoo</option>
+            <option value="https://www.bing.com/search?q=">Bing</option>
+            <option value="http://ask.com/web?q=">Ask</option>
+            <option value="http://www.sapo.pt/pesquisa?q=">Sapo - Portugal</option>
+            <option value="http://www.aonde.com/?q=">Aonde - Brasil</option>
+            <option value="http://www.excite.it/sitesearch?q=">Excite - Italia</option>
+            <option value="http://buscador.terra.es/Default.aspx?source=Search&ca=l&query=">Terra - Espanha</option>
+    </select>
+    For: 
+        <input style="border: 2px solid grey; border-radius: 10px; font-size: 20px; width: 400px; height: 60px"type="text" name="searchterms">
+        <input class="button2"type="submit" name="SearchSubmit" value="Search">
+    </form>
+    </div>
+    
+    
+    <div style="text-align: center">
+        <a href="http://www.snifferdogit.com" class="button2">go to Snifferdog IT page</a>
+        </form>
+    </div>
+</body>
+
+<footer id="foot" style="padding-top:170px; text-align: center">
+    <script type="text/javascript">
+    document.getElementById("foot").innerHTML =
+     "<p>&copy;  " + new Date().getFullYear() + " Snifferdog IT - Search tool. All rights reserved.</p>";
+    </script>
+    <p>I wanna have sex</p>
+</footer>
+
+</html>
